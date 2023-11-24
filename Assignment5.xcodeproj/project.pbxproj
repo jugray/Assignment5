@@ -13,6 +13,7 @@
 		0CC836DF2B1152EF00BADA47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC836DD2B1152EF00BADA47 /* Main.storyboard */; };
 		0CC836E12B1152F100BADA47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC836E02B1152F100BADA47 /* Assets.xcassets */; };
 		0CC836E42B1152F100BADA47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC836E22B1152F100BADA47 /* LaunchScreen.storyboard */; };
+		0CC836EC2B115AD200BADA47 /* ConversionLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC836EB2B115AD200BADA47 /* ConversionLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0CC836E02B1152F100BADA47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC836E32B1152F100BADA47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC836E52B1152F100BADA47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC836EB2B115AD200BADA47 /* ConversionLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0CC836D72B1152EF00BADA47 /* AppDelegate.swift */,
 				0CC836D92B1152EF00BADA47 /* SceneDelegate.swift */,
 				0CC836DB2B1152EF00BADA47 /* ViewController.swift */,
+				0CC836EB2B115AD200BADA47 /* ConversionLogic.swift */,
 				0CC836DD2B1152EF00BADA47 /* Main.storyboard */,
 				0CC836E02B1152F100BADA47 /* Assets.xcassets */,
 				0CC836E22B1152F100BADA47 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC836EC2B115AD200BADA47 /* ConversionLogic.swift in Sources */,
 				0CC836DC2B1152EF00BADA47 /* ViewController.swift in Sources */,
 				0CC836D82B1152EF00BADA47 /* AppDelegate.swift in Sources */,
 				0CC836DA2B1152EF00BADA47 /* SceneDelegate.swift in Sources */,

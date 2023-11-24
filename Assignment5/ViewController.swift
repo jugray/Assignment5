@@ -11,11 +11,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var usdField: UITextField!
     
-    var enableEuro = true
-    var enableYen = true
-    var enablePound = true
-    var enableFranc = true
+   
     var usdValue : Double = 0.0
+    
+    var conversion = ConversionLogic()  
     
     
     override func viewDidLoad() {
@@ -24,42 +23,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func euroSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            enableEuro = true
-        }
-        else {
-            enableEuro = false
-        }
+        conversion.setEuroSwitch(sender.isOn)
     }
     
     @IBAction func yenSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            enableYen = true
-        }
-        else {
-            enableYen = false
-        }
+        conversion.setYenSwitch(sender.isOn)
     }
     
     @IBAction func poundSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            enablePound = true
-        }
-        else {
-            enablePound = false
-        }
+        conversion.setPoundSwitch(sender.isOn)
     }
     
     @IBAction func francSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            enablePound = true
-        }
-        else {
-            enablePound = false
-        }
+        conversion.setFrancSwitch(sender.isOn)
     }
     
     @IBAction func convertButton(_ sender: UIButton) {
+        usdValue = NumberFormatter().number(from: usdField.text!)?.doubleValue ?? 0.0
+        
+        if usdValue != 0.0 {
+            conversion.convert(usdValue)
+        }
         
     }
 }
