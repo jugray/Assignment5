@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var enableYen = true
     var enablePound = true
     var enableFranc = true
+    var usdValue : Double = 0.0
     
     
     override func viewDidLoad() {
@@ -22,19 +23,44 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func euroSwitch(_ sender: Any) {
+    @IBAction func euroSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            enableEuro = true
+        }
+        else {
+            enableEuro = false
+        }
     }
     
-    @IBAction func yenSwitch(_ sender: Any) {
+    @IBAction func yenSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            enableYen = true
+        }
+        else {
+            enableYen = false
+        }
     }
     
-    @IBAction func poundSwitch(_ sender: Any) {
+    @IBAction func poundSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            enablePound = true
+        }
+        else {
+            enablePound = false
+        }
     }
     
-    @IBAction func francSwitch(_ sender: Any) {
+    @IBAction func francSwitch(_ sender: UISwitch) {
+        if sender.isOn {
+            enablePound = true
+        }
+        else {
+            enablePound = false
+        }
     }
     
-    @IBAction func convertButton(_ sender: Any) {
+    @IBAction func convertButton(_ sender: UIButton) {
+        
     }
 }
 
