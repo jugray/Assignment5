@@ -80,6 +80,10 @@ struct ConversionLogic{
         }
         
         
+        print(finalEuro)
+        print(finalYen)
+        print(finalPound)
+        print(finalFranc)
     }
     
     
