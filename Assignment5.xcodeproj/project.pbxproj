@@ -62,15 +62,31 @@
 			children = (
 				0CC836D72B1152EF00BADA47 /* AppDelegate.swift */,
 				0CC836D92B1152EF00BADA47 /* SceneDelegate.swift */,
-				0CC836DB2B1152EF00BADA47 /* ViewController.swift */,
-				0CC836EB2B115AD200BADA47 /* ConversionLogic.swift */,
-				0CC836ED2B11668200BADA47 /* ConversionView.swift */,
+				0CC836F02B11886E00BADA47 /* Model */,
+				0CC836EF2B11885900BADA47 /* View */,
 				0CC836DD2B1152EF00BADA47 /* Main.storyboard */,
 				0CC836E02B1152F100BADA47 /* Assets.xcassets */,
 				0CC836E22B1152F100BADA47 /* LaunchScreen.storyboard */,
 				0CC836E52B1152F100BADA47 /* Info.plist */,
 			);
 			path = Assignment5;
+			sourceTree = "<group>";
+		};
+		0CC836EF2B11885900BADA47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CC836DB2B1152EF00BADA47 /* ViewController.swift */,
+				0CC836ED2B11668200BADA47 /* ConversionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0CC836F02B11886E00BADA47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CC836EB2B115AD200BADA47 /* ConversionLogic.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
