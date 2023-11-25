@@ -66,17 +66,29 @@ struct ConversionLogic{
         if enableEuro {
             finalEuro = usdValueIn * euroConversion
         }
+        else {
+            finalEuro = -1
+        }
         
         if enableYen {
             finalYen = usdValueIn * yenConversion
+        }
+        else {
+            finalYen = -1
         }
         
         if enablePound {
             finalPound = usdValueIn * poundConversion
         }
+        else {
+            finalPound = -1
+        }
         
         if enableFranc {
             finalFranc = usdValueIn  * francConversion
+        }
+        else {
+            finalFranc = -1
         }
         
         

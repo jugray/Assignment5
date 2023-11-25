@@ -50,21 +50,37 @@ class ConversionView: UIViewController {
     }
     
     func enableLables() {
-        if euroAmount == 0 {
+        if euroAmount <= 0 {
             euroTextLabel.isHidden = true
             finalEuroLabel.isHidden = true
         }
-        if yenAmonut == 0 {
+        else {
+            euroTextLabel.isHidden = false
+            finalEuroLabel.isHidden = false
+        }
+        if yenAmonut <= 0 {
             yenTextLabel.isHidden = true
             finalYenLabel.isHidden = true
         }
-        if poundAmount == 0.0 {
+        else {
+            yenTextLabel.isHidden = false
+            finalYenLabel.isHidden = false
+        }
+        if poundAmount <= 0.0 {
             poundTextLabel.isHidden = true
             finalPoundLabel.isHidden = true
         }
-        if francAmount == 0 {
+        else {
+            poundTextLabel.isHidden = false
+            finalPoundLabel.isHidden = false
+        }
+        if francAmount <= 0 {
             francTextLabel.isHidden = true
             finalFrancLabel.isHidden = true
+        }
+        else {
+            francTextLabel.isHidden = false
+            finalFrancLabel.isHidden = false
         }
             
     }
