@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curren$y Conversion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNH-HA-lMa">
-                                <rect key="frame" x="69.333333333333314" y="99" width="254.66666666666669" height="31.666666666666657"/>
+                                <rect key="frame" x="69.333333333333329" y="99" width="254.66666666666669" height="31.666666666666657"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -272,11 +272,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="euroTextLabel" destination="BPx-Zg-Ts8" id="AC0-wt-l4r"/>
                         <outlet property="finalEuroLabel" destination="WhS-Ld-Z42" id="wvl-dA-2YI"/>
                         <outlet property="finalFrancLabel" destination="Ei3-Y1-sBo" id="xNR-V5-iXg"/>
                         <outlet property="finalPoundLabel" destination="Jte-7f-8sP" id="rZp-aW-FXb"/>
                         <outlet property="finalUSDLabel" destination="ETf-WI-1ct" id="1Ga-uu-uTA"/>
                         <outlet property="finalYenLabel" destination="RKe-vx-TK8" id="IhP-rn-tX2"/>
+                        <outlet property="francTextLabel" destination="2cW-gs-Epn" id="iXU-vs-J3c"/>
+                        <outlet property="poundTextLabel" destination="cz7-9O-fjs" id="Pgi-Ee-kfT"/>
+                        <outlet property="yenTextLabel" destination="GaG-av-0N2" id="0Eq-yB-uLE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONf-bk-nMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

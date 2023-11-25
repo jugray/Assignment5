@@ -86,6 +86,21 @@ struct ConversionLogic{
         print(finalFranc)
     }
     
+    func getEuros() -> Double {
+        return finalEuro
+    }
+    
+    func getYen() -> Double {
+        return finalYen
+    }
+    
+    func getPound() -> Double {
+        return finalPound
+    }
+    
+    func getFranc() -> Double {
+        return finalFranc
+    }
     
     
     
