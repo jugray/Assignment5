@@ -41,11 +41,11 @@ class ConversionView: UIViewController {
         
         enableLables()
         
-        finalUSDLabel.text = "USD Value: \(usdAmount)"
-        finalEuroLabel.text = "\(euroAmount)"
-        finalYenLabel.text = "\(yenAmonut)"
-        finalPoundLabel.text = "\(poundAmount)"
-        finalFrancLabel.text = "\(francAmount)"
+        finalUSDLabel.text = "USD Value: \(usdAmount.formatted(.currency(code: "USD")))"
+        finalEuroLabel.text = "\(euroAmount.formatted(.currency(code: "EUR")))"
+        finalYenLabel.text = "\(yenAmonut.formatted(.currency(code: "JPY")))"
+        finalPoundLabel.text = "\(poundAmount.formatted(.currency(code:"GBP")))"
+        finalFrancLabel.text = "\(francAmount.formatted(.currency(code:"SFr")))"
         // Do any additional setup after loading the view.
     }
     

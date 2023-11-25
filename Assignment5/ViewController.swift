@@ -39,13 +39,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func convertButton(_ sender: UIButton) {
-        usdValue = NumberFormatter().number(from: usdField.text!)?.doubleValue ?? 0.0
+        usdValue = NumberFormatter().number(from: usdField.text!)?.doubleValue ?? -1.0
         
-        if usdValue != 0.0 {
+        if usdValue >= 0.0 {
+            usdField.textColor = .black
             conversion.convert(usdValue)
+            self.performSegue(withIdentifier: "toConversion", sender: self)
+
+        }
+        else {
+            usdField.text = "Invalid Entry!"
+            usdField.textColor = .red
         }
         
-        self.performSegue(withIdentifier: "toConversion", sender: self)
         
     }
     
